@@ -1,0 +1,20 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: sms-service
+  rabbitmq:
+    host: 192.168.8.128
+    virtual-host: /leyou
+    username: leyou
+    password: leyou
+    template:
+      exchange: leyou.sms.exchange
+  redis:
+    host: 192.168.8.128
+leyou:
+  sms:
+    accessKeyId: LTAI4G4tnJS6snSizagn6yZU # 你自己的accessKeyId
+    accessKeySecret: ofzeppZSP3Oy7l13d1tmHtqpNdVAI9 # 你自己的AccessKeySecret
+    signName: cyq版乐优商城 # 签名名称
+    verifyCodeTemplate: SMS_188992928 # 模板名称
